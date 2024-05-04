@@ -1,8 +1,11 @@
-import { LoginForm } from "@/components/auth/login-form";
+// import { LoginForm } from "@/components/auth/login-form";
 
 const LoginPage = () => {
   return (
-    <LoginForm />
+    <div>
+      { /* <LoginForm /> */}
+      <h1>Login Form</h1>
+    </div>
   );
 };
 
