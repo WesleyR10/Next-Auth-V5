@@ -21,7 +21,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FormError } from "@/components/form-error";
 import { FormSuccess } from "@/components/form-success";
-// import { login } from "@/actions/login";
+import { login } from "@/actions/login";
 
 export const LoginForm = () => {
   const searchParams = useSearchParams();
@@ -43,7 +43,7 @@ export const LoginForm = () => {
       email: "",
       password: "",
     },
-  })
+  });
 
   const onSubmit = (values: z.infer<typeof LoginSchema>) => {
     setError("");
